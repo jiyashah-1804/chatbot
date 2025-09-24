@@ -16,7 +16,7 @@ async function sendMessage() {
 
   // Send to n8n webhook
   try {
-    const response = await fetch("https://n8n.bmvsi.in/webhook-test/airbnb-bot", {
+    const response = await fetch("https://n8n.bmvsi.in/webhook/airbnb-bot", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
